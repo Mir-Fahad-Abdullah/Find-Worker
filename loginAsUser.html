@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<title>Login As User</title>
+		<link rel = "stylesheet" href = "styleForLoginUser.css">
+	</head>
+		
+	<body>
+		<form class = "box" action = "mainpageForUser.html" method = "post" name = "">
+			<h1>User Login</h1>
+			<input type = "text" name = "username" placeholder = "Username" required>
+			<input type = "password" name = "password" placeholder = "Password" required>
+			<input type="submit" name = "login" value = "Login">
+			<a href="forgot_password.html">Forgot password?</a><br/>
+			<a href="signUpAsUser.php">Join As User</a>
+		</form>	
+		
+		
+		
+	<?php 
+
+	$host="localhost";
+	$user="root";
+	$password="";
+	$db="find_worker";
+
+	mysql_connect($host,$user,$password);
+	mysql_select_db($db);
+
+	if(isset($_POST['username'])){
+		
+		$username=$_POST['username'];
+		$password=$_POST['password'];
+		
+		$sql="select * from signupuser where user='".$username."'AND Pass='".$password."' limit 1";
+		
+		$result=mysql_query($sql);
+		
+		if(mysql_num_rows($result)==1){
+			echo " You Have Successfully Logged in";
+			exit();
+		}
+		else{
+			echo " You Have Entered Incorrect Password";
+			exit();
+		}
+			
+	}
+	?>
+		
+		
+	</body>
+
+</html>

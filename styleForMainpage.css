@@ -1,0 +1,169 @@
+body{
+
+	margin : 0;
+	padding :0;
+	font-family:sans-serif;
+	font-size:16px;
+	background-image: url(pics/mainpage.jpg);
+	background-size :cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:100vh;
+	
+}
+.nav{
+	width:100%;
+	background-color: rgba(0,0,0,0.5);
+	color:#fff;
+}	
+.menu{
+line-height: 45px;
+font weight:700;
+text-transform:uppercase;
+}
+
+.nav ul{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+.nav .menu .menu_item{
+display:inline-block;
+position:relative;
+}
+
+.menu_item:hover{
+background-color:#2c3e50;
+}
+.nav .menu .menu_item a{
+	padding:12px 24px;
+	cursor:pointer;
+	text-decoration: none;
+	color: #fff;
+	display:block;
+}
+.submenu{
+text-transform:none;
+display:none;
+position:absolute;
+width:220px;
+background-color: rgba(0,0,0,0.8)
+}
+
+.menu_item:hover .submenu{
+	display:block;
+}
+.submenu_item{
+border-left:4px solid transparent;
+}
+
+
+.submenu_item:hover{
+background-color:rgba(0,0,0,0.6);
+border-left:4px solid rgba(450,0,60, 0.8);
+}
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 20;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-image: url(pictures/driver.jpg);
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-image: url(pictures/maid.jpg);
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+} 
+
+
+.x a{
+	
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: left;
+	border: 2px solid #FF8C00;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	text-decoration: none;
+	width: 40px
+	
+}
+
+.x a:hover{
+	
+	background: #474b9d;
+	
+}
+
+.x p{
+	
+	color: white;
+	font-weight: 100;
+	text-align: center
+	
+}
+
+.x h2{
+	
+	color: yellow;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center
+	
+}
+
+
+
+.x{
+	
+	width: 500px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #027672;
+	background-position: left;
+	text-align: center;
+	opacity: 0.8;
+	border-radius: 2%
+
+}

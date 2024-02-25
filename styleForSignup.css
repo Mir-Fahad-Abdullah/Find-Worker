@@ -1,0 +1,120 @@
+body{
+
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url("pics/signup.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 25%
+}
+
+.box{
+	
+	width: 400px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	background-position: center;
+	text-align: center;
+	opacity: 0.9;
+	border-radius: 2%
+	
+}
+
+.box p{
+	
+	color: purple;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center
+	
+}
+
+
+.box input[type = "text"], input[type = "password"]{
+	
+	border: 0;
+	background: transparent;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: none;
+	border-bottom: 2px solid #32CD32;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: black;
+	transition: 0.25s;
+	border-radius: 5px
+	
+}
+
+.box input[type = "text"]:focus{
+	
+	width: 280px;
+	border-color: #FF8C00
+	
+}
+
+.box input[type = "password"]:focus{
+	
+	width: 280px;
+	border-color: #FF8C00
+	
+}
+
+
+.box input[type = "submit"]{
+	
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #FF8C00;
+	padding: 14px 40px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	text-decoration: none;
+	
+}
+
+.box input[type = "submit"]:hover{
+	
+	background: #32CD32;
+	
+}
+
+
+.box a{
+	
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #FF8C00;
+	padding: 14px 40px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	text-decoration: none;
+	width: 40px
+	
+}
+
+.box a:hover{
+	
+	background: #32CD32;
+	
+}
